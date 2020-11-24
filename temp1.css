@@ -1,0 +1,271 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+    background-color: gray;
+    margin:0px;
+    padding:0px;
+    *{padding:0px;}
+
+}
+
+/* navbar ---------------------------------------------------------------------------*/
+.navdiv{
+  width:100%;
+    background-color:black;
+    overflow:hidden;
+    position:fixed;
+}
+
+ .navdiva{
+   /* background-color: red;  */
+  float:left;
+  font-size:17px;
+  padding:14px 16px;
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  color:gray;
+}
+ 
+.navdiva:hover{
+  background-color: gray;
+  color:white;
+}
+
+
+@media only screen and (max-width:600px)
+{
+}
+
+
+/* logo-------------------------------------------------------------------- */
+#head{
+    /* background-image:url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JhZGllbnR8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat; */
+  background-color: lavender;
+  background-size: cover;
+    display:flex;
+ justify-content: center;
+ align-items: center;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size:48px;
+ text-shadow:3px 3px 3px green;
+ } 
+
+
+ @media only screen and (max-width:600px)
+ { 
+  #head{ font-size:15px;
+  text-shadow:2px 2px 2px green;
+    
+  }
+ }
+
+/* Home page ----------------------------------------------------------------------------------*/
+#home{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+ #homediv{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:800px;
+  background-image: url(https://images.unsplash.com/photo-1592691475195-29939a07272a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTd8fGJhY2tncm91bmQlMjBoaWdoJTIwbGVuZ3RoJTIwaW1hZ2V8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60);
+   animation-name: homeanimation;
+   animation-duration:40s;
+   animation-delay: -1s;
+   animation-iteration-count:100;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ 
+@keyframes homeanimation{
+  20%{background-image:url(https://images.unsplash.com/photo-1547561090-e2c1104d363f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHN0dWR5JTIwcXVvdGVzJTIwbGVmdHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60);}
+  40%{background-image:url(https://images.unsplash.com/photo-1533737382843-3279f2054af7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDd8fHN0dWR5JTIwcXVvdGVzJTIwbGVmdHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60);}
+  60%{background-image:url(https://images.unsplash.com/photo-1524475922556-171e86798684?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHN0dWR5JTIwcXVvdGVzJTIwbGVmdHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60);}
+  80%{background-image:url(https://images.unsplash.com/photo-1565378435089-7b0ff45a898e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YmFja2dyb3VuZCUyMHNtYWxsfGVufDB8fDB8&auto=format&fit=crop&w=500&q=60);}
+  100%{background-image:url(https://images.unsplash.com/photo-1516617442634-75371039cb3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8YmFja2dyb3VuZHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60);}
+}
+
+#banner{
+  width:100%;
+}
+#banner div {
+  width:100%;
+  background-color: pink;
+}
+#banner div img{
+  width:100%;
+  height:600px;
+}
+@media only screen and (max-width:600px)
+{
+  #banner div img{
+    height:300px;
+  }
+  #homediv{
+    height:450px;
+  }
+}
+
+/* aboutus ----------------------------------------------------------------------------------------------*/
+#aboutus{
+  display:flex;
+  justify-content:center;
+  background-color:gray;
+  background-image: url("new.jpg");
+  height:700px;
+  width:100%;
+  flex-wrap:wrap;
+  align-items: center;
+}
+    #quotediv{
+    margin:5px 10px 0px 20px;
+    text-align:center;
+    font-size:50px;
+    /* background-color:pink; */
+    }
+        #quotediv p {
+  border:5px solid green;
+  border-left:35px solid red;
+  border-right:10px solid green;
+        }
+    #aboutusdiv{
+      /* background-color: yellow; */
+    
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+        #aboutusdiv img{
+  width:180px;
+  height:200px;
+  margin-top:20px;
+  /* margin-left:20px; */
+  border-radius: 150px;
+  border:5px solid red;
+  border-bottom: 5px solid blue;
+  border-left: 5px solid green;
+  border-right: 5px solid yellow;
+        }
+        #aboutusdiv div i{
+  font-size:35px;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+        }
+
+        @media only screen and (max-width:600px)
+        {
+          #quotediv{
+            font-size:30px;
+          }
+        #aboutusdiv div i{
+          font-size:25px;
+        }
+        }
+
+
+/* contact us------------------------------------------------------------------------------------------------- */
+#contactus{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:600px;
+  background-image: url(contact.jpg);
+  background-size: cover;
+}
+#contactusdiv{
+  display:block;
+  width:40%;
+  height:300px;
+  background-color: rgba( 22,22,22,.5);
+  border-radius: 15px 2px 15px 2px;
+
+  
+}
+#contactusdiv p{
+  font-size:20px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:black;
+  border-radius:6px;
+  margin-left: 50px;
+}
+#contactusdiv p a{
+  text-decoration: none;
+  font-size:20px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:black;
+}
+ 
+#contactusdiv p:hover {
+  color:white;
+  background-color:rgba(15,15,15,.3);
+  font-size:1.3em;
+  transition-duration: .4s;
+  padding:2px;
+} /*social media*/
+    #socialmedia{
+      width:80px;
+      height:300px;
+      /* background-color: burlywood; */
+      display:flex;
+      flex-direction: column;
+      justify-content:space-around;
+      align-items: flex-end;
+
+    }
+    .socialimg{
+      width:60px;
+      height:60px;
+      border-radius: 5px 0px 0px 5px;
+    }
+    @media only screen and (max-width:600px)
+    {
+      #contactusdiv{
+      width:90%;
+      /* margin:20px; */
+      }
+      #contactus{
+        flex-direction: column;
+      }  
+      #socialmedia{
+          height:80px;
+          width:100%;
+          /* background-color: burlywood; */
+          display:flex;
+          justify-content:space-around;
+        flex-direction: row;
+        margin-top: 0px;
+        }
+        .socialimg{
+          width:60px;
+          height:60px;
+          border-radius:5px 5px 0px 0px;
+        }
+
+    }    
+
+
+
+/* lastimage----------------------------------------------------------------------------------------------------- */
+#lastimage{
+  height: 500px;
+  background-image: url("children.jpg");
+  background-size: cover;
+}
+
+/* developed by--------------------------------------- */
+#developedby{
+  background-image:url(ak.jpg);
+  /* background-color: red; */
+}
+#developedby h4 {
+  font-size: 18px;
+  padding:0px;
+}
